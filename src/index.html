@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height">
+		<title>Map Merging Tool</title>
+		<style>
+			#maps > * {
+				display: block;
+				margin: 10px 0;
+			}
+			#merge {
+				margin-top: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="maps">
+			<label>Ambient occlusion map (R):</label><input id="uploadAO" name="aoMap" type="file" class="button">
+			<label>Roughness map (G):</label><input id="uploadRoughness" name="roughnessMap" type="file" class="button">
+			<label>Metalness map (B):</label><input id="uploadMetalness" name="metalnessMap" type="file" class="button">
+			<input id="merge" name="merge" type="button" value="Merge Maps!">
+		</div>
+		<a id="mergedA">
+			<img id="mergedIMG">
+		</a>
+		<script src="js/app.js"></script>
+		<script>
+			// Add it as a global variable so it can be reached easily from the console for debugging.
+			const main = Main.getInstance();
+		</script>
+	</body>
+</html>

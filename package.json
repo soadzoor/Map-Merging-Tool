@@ -1,0 +1,18 @@
+{
+  "name": "Title",
+  "description": "Title",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "node build/build all"
+  },
+  "author": "Author",
+  "dependencies": {
+    "fs": "0.0.2",
+    "fs-extra": "^0.24.0",
+    "shelljs": "^0.6.0",
+    "typescript": "^2.9.2",
+    "uglify-js": "^2.7.4"
+  },
+  "repository": "",
+  "license": ""
+}
